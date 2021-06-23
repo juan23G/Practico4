@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Practico4</string>
+    <string name="Login">Login</string>
+    <string name="Usuario">Ingrese Nombre de Usuario</string>
+    <string name="Contraseña">Ingrese Contraseña</string>
+    <string name="Registrar">Registrar</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Usuarios">Usuarios</string>
+    <string name="NombreCompleto">Ingrese Nombre Completo</string>
+    <string name="NombreDeUsuario">Ingrese Nombre de Usuario</string>
+    <string name="Email">Ingrese correo electronico</string>
+    <string name="Contraseña2">Ingrese Contraseña</string>
+    <string name="RepetirContraseña">Repetir Contraseña</string>
+    <string name="Registrar2">Registrar</string>
+    <string name="Ingresar2">Ingresar</string>
+    <string name="Datos">Datos del programador:</string>
+    <string name="NombreyApellido">Nombre y Apellido:</string>
+    <string name="NombreyApellido2">Juan Marcelo Cazaux</string>
+    <string name="Telefono">Telefono:</string>
+    <string name="Numero">+54 2954 633659</string>
+    <string name="Llamar">Llamar</string>
+    <string name="Correo">Correo electronico:</string>
+    <string name="Correo2">cazauxjuanmarcelo@gmail.com</string>
+    <string name="correo3">contactar</string>
+    <string name="Repositorio">Repositorio:</string>
+    <string name="GIT">https://github.com/juan23G</string>
+    <string name="GIT2">Ir</string>
+
+
+</resources>
