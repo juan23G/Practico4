@@ -2,7 +2,9 @@ package com.example.practico4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         String contraseña = editTextContraseña2.getText().toString();
 
         if (usuario.equals("ites") && contraseña.equals("123456")){
+            sharepreference(usuario);
 
             Intent intent = new Intent(MainActivity.this, Detalles.class);
             intent.putExtra("EXTRA_EMAIL", usuario);
@@ -66,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
     private void registrar(){
         Intent intent = new Intent(MainActivity.this, Registrar.class);
         startActivity(intent);
+    }
+
+    private void sharepreference(String usuario){
+
+        SharedPreferences sp = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("usuario", usuario);
+        editor.commit();
     }
 
 }
