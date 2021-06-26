@@ -54,15 +54,29 @@ public class Registrar extends AppCompatActivity {
 
     private void registrar(){
 
-        SharedPreferences sp = getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sp.edit();
-        editor.putString("NombreCompleto", editTextNombreCompleto.getText().toString());
+        String nombre = editTextNombreCompleto.getText().toString();
+        String usuario = editTextNombreUsuario.getText().toString();
+        String email = editTextEmail.getText().toString();
+        String contraseña = editTextContraseña.getText().toString();
+        String contraseña2 = editTextContraseña2.getText().toString();
+
+        if(!nombre.isEmpty() && !usuario.isEmpty() && !email.isEmpty() && !contraseña.isEmpty() && !contraseña.isEmpty()) {
+            sharepreference(nombre, usuario, email, contraseña, contraseña2);
+
+            Intent intent = new Intent(Registrar.this, MainActivity.class);
+            intent.putExtra("EXTRA_EMAIL", usuario);
+            startActivity(intent);
+        }
+        else {
+            Toast.makeText(this, "Completar todos los campos", Toast.LENGTH_SHORT).show();
+        }
+        /*editor.putString("NombreCompleto", editTextNombreCompleto.getText().toString());
         editor.putString("NombreUsuario", editTextNombreUsuario.getText().toString());
         editor.putString("Email", editTextEmail.getText().toString());
         editor.putString("Contraseña2", editTextContraseña2.getText().toString());
         editor.putString("Contraseña", editTextContraseña.getText().toString());
-        editor.commit();
-        Toast.makeText(this, "Listo", Toast.LENGTH_SHORT).show();
+        editor.commit();*/
+
     }
 
     private void ingresar(){
@@ -70,6 +84,16 @@ public class Registrar extends AppCompatActivity {
         Intent intent = new Intent(Registrar.this, MainActivity.class);
         startActivity(intent);
     }
+    private void sharepreference(String nombre, String usuario, String email, String contraseña, String contraseña2){
 
+        SharedPreferences sp = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("usuario", usuario);
+        editor.putString("nombre", nombre);
+        editor.putString("email", email);
+        editor.putString("contraseña", contraseña);
+        editor.putString("contraseña2", contraseña2);
+        editor.commit();
+    }
 
 }
