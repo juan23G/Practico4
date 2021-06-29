@@ -13,11 +13,14 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Detalles extends AppCompatActivity {
 
     private Button buttonLlamar, buttonContactar, buttonGIT;
-
+private String usuarioo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detalles);
+
+        Intent intent = getIntent();
+        usuarioo = intent.getStringExtra("EXTRA_EMAIL");
 
         this.cargarComponentes();
         setTitle ( " Acerca de " );

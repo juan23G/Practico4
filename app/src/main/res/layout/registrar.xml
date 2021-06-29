@@ -7,7 +7,7 @@
     android:background="@color/black">
 
     <EditText
-        android:id="@+id/editTextContraseña"
+        android:id="@+id/editTextContrasea"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -21,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextContraseaa" />
 
     <EditText
         android:id="@+id/editTextNombreCompleto"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextNombreUsuario" />
 
     <EditText
-        android:id="@+id/editTextContraseña2"
+        android:id="@+id/editTextContraseaa"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <Button
-        android:id="@+id/buttonRegistrar2"
+        android:id="@+id/buttonRegistrarSegundo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -123,7 +123,7 @@
         android:text="@string/Registrar2"
         app:layout_constraintEnd_toStartOf="@+id/buttonIngresar2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextContrasea" />
 
     <Button
         android:id="@+id/buttonIngresar2"
@@ -133,6 +133,6 @@
         android:backgroundTint="@color/rojo"
         android:text="@string/Ingresar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buttonRegistrar2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseña" />
+        app:layout_constraintStart_toEndOf="@+id/buttonRegistrarSegundo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextContrasea" />
 </androidx.constraintlayout.widget.ConstraintLayout>

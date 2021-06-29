@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     private void cargarComponentes(){
 
         editTextUsuario = findViewById(R.id.editTextUsuario);
-        editTextContraseña2 = findViewById(R.id.editTextContraseña2);
+        editTextContraseña2 = findViewById(R.id.editTextContraseaa);
         buttonIngresar = findViewById(R.id.buttonIngresar);
         buttonRegistrar = findViewById(R.id.buttonRegistrar);
     }
